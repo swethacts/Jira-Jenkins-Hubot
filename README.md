@@ -18,7 +18,32 @@ A step by step series of examples that tell you how to get a development env run
 Say what the step will be
 
 #JIRA HUBOT
-Place 
+Place  jira-env-file at Cdrive with valid configurations
+# Example 
+HUBOT_NAME=jirabot  #valid name 
+EXPRESS_PORT=8787   
+MY_POD_IP=10.120.101.126    #valid IP 
+HUBOT_SLACK_TOKEN=xoxb-555685734404-585039739682-qv0tffC9rZVjO3jYGrDYSrW0   #valid slack Token 
+HUBOT_JIRA_URL=http://192.168.40.202:8009 #valid JIRA URL 
+HUBOT_JIRA_USER=swethareddy.baikadi #valid JIRA UserName 
+HUBOT_JIRA_PASSWORD=feb@2019 # #valid Password 
+
+#Steps
+Go to command promt
+Run below command
+docker run -dit --env-file jira-env-file -p 8788:8788 devopsbasservice/onbotframework:slack-jirabot-ubuntu-v1
+
+After installing 
+
+then go to  https://practise-hq.slack.com
+Username : nayana.cv@cognizant.com
+Password :  Nayana-nov24
+
+Left Hand side bottom we can find the APPs menu ---> jirabot
+type  Help  in texbox it gives the list of commands which need to interact with hubot to jira
+
+
+
 
 And repeat
 
