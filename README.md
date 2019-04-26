@@ -17,7 +17,7 @@ A step by step series of examples that tell you how to get a development env run
 
 Say what the step will be
 
-#JIRA HUBOT
+### JIRA HUBOT
 Place  jira-env-file at Cdrive with valid configurations
 # Example 
 HUBOT_NAME=jirabot  #valid name 
@@ -34,7 +34,7 @@ HUBOT_JIRA_USER=swethareddy.baikadi #valid JIRA UserName
 
 HUBOT_JIRA_PASSWORD=feb@2019 # #valid Password 
 
-#Steps
+### Steps
 Go to command promt
 Run below command
 docker run -dit --env-file jira-env-file -p 8788:8788 devopsbasservice/onbotframework:slack-jirabot-ubuntu-v1
