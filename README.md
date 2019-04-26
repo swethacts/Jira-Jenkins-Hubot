@@ -9,13 +9,23 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Docker Required
+Jira Working Url
+Jenkins working Url
+Slack URL Needed (with Credentials)
 
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+### JIRA Installation With Docker
+Basic Jira installation 
+docker run --detach --publish 8009:8080  --volume "hostpath:/var/atlassian/jira"  cptactionhank/atlassian-jira:latest
 
-Say what the step will be
+Check below url for more requirements
+
+https://hub.docker.com/u/cptactionhank
+
+#### Jennkin Installation With Doker 
+docker run  -u root  --rm  -d  -p 9090:8080 -p 50000:50000  -v jenkins-data:/var/jenkins_home  -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
 
 ### JIRA HUBOT
 Place  jira-env-file at Cdrive with valid configurations
