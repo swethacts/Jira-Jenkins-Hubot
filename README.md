@@ -67,6 +67,10 @@ Run below command
 
 docker run -dit --env-file jenkins-env-file -p 8787:8787 devopsbasservice/onbotframework:slack-jenkinsbot-ubuntu-v1
 
+To see inside scrpts
+docker exec -it <container id> /bin/bash
+
+
 After installing 
 
 Go to slack chanel
