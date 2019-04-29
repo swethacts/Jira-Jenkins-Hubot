@@ -20,6 +20,10 @@ Slack URL Needed (with Credentials)
 Basic Jira installation 
 docker run --detach --publish 8009:8080  --volume "hostpath:/var/atlassian/jira"  cptactionhank/atlassian-jira:latest
 
+or
+docker run --detach --publish 8009:8080  --volume "hostpath:/var/atlassian/jira"  cptactionhank/atlassian-jira-software:latest
+
+
 Check below url for more requirements
 
 https://hub.docker.com/u/cptactionhank
@@ -44,6 +48,8 @@ Go to command promt
 Run below command
 
 docker run -dit --env-file jira-env-file -p 8788:8788 devopsbasservice/onbotframework:slack-jirabot-ubuntu-v1
+
+
 
 After installing 
 
